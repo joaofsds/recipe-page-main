@@ -61,7 +61,7 @@
   --tp-4-letter-spacing: 0px;
 
   /* Text Preset 4 Bold */
-  --tp-4-bold-font: var(--font-outfit);
+  --tp-4-bold-font: var(--ff-outfit);
   --tp-4-bold-weight: 700; /* Bold */
   --tp-4-bold-size: 1rem;
   --tp-4-bold-line-height: 150%;
@@ -89,13 +89,15 @@ body {
 main {
   background: var(--white);
   max-width: 46rem; /*736px*/
+  padding: 2.5rem;
+  border-radius: 24px;
 }
 
 main img {
-  display: block;
   align-items: center;
   max-width: 656px;
   max-height: 300px;
+  border-radius: 12px;
 }
 
 main h1 {
@@ -106,10 +108,78 @@ main h1 {
   letter-spacing: var(--tp-1-letter-spacing);
 }
 
+main h2 {
+  font-family: var(--tp-2-font);
+  font-size: var(--tp-2-size);
+  color: var(--brown-800);
+  line-height: var(--tp-2-line-height);
+  letter-spacing: var(--tp-2-letter-spacing);
+  font-weight: var(--tp-4-weight);
+}
+
 main p {
   font-family: var(--tp-4-font);
   font-size: var(--tp-4-size);
   color: var(--stone-600);
   line-height: var(--tp-4-line-height);
   letter-spacing: var(--tp-4-letter-spacing);
+}
+main ul {
+  list-style: none;
+  font-family: var(--tp-4-font);
+  font-size: var(--tp-4-size);
+  color: var(--stone-600);
+  line-height: var(--tp-4-line-height);
+  letter-spacing: var(--tp-4-letter-spacing);
+  font-weight: var(--tp-4-weight);
+}
+
+main ol {
+  font-family: var(--tp-4-font);
+  font-size: var(--tp-4-size);
+  color: var(--stone-600);
+  line-height: var(--tp-4-line-height);
+  letter-spacing: var(--tp-4-letter-spacing);
+  font-weight: var(--tp-4-weight);
+}
+section {
+  background: var(--rose-50);
+  border-radius: 12px;
+}
+
+section h3 {
+  font-family: var(--tp-3-font);
+  font-size: var(--tp-3-size);
+  color: var(--rose-800);
+  line-height: var(--tp-3-line-height);
+  letter-spacing: var(--tp-3-letter-spacing);
+  font-weight: var(--tp-3-weight);
+}
+
+section ul {
+  list-style: none;
+  font-family: var(--tp-4-font);
+  font-size: var(--tp-4-size);
+  color: var(--stone-600);
+  line-height: var(--tp-4-line-height);
+  letter-spacing: var(--tp-4-letter-spacing);
+  font-weight: var(--tp-4-weight);
+}
+
+table .table-nutrients {
+  font-family: var(--tp-4-font);
+  font-size: var(--tp-4-size);
+  color: var(--stone-600);
+  line-height: var(--tp-4-line-height);
+  letter-spacing: var(--tp-4-letter-spacing);
+  font-weight: var(--tp-4-weight);
+}
+
+table .table-measures {
+  font-family: var(--tp-4-bold-font);
+  font-size: var(--tp-4-bold-size);
+  color: var(--brown-800);
+  line-height: var(--tp-4-bold-line-height);
+  letter-spacing: var(--tp-4-bold-letter-spacing);
+  font-weight: var(--tp-4-bold-weight);
 }
