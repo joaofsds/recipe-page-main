@@ -1,8 +1,115 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: gray; /* remove later */
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  /* Rose */
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+
+  /* Stone */
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+
+  /* Brown */
+  --brown-800: #854632;
+
+  /* White */
+  --white: #ffffff;
+
+  /* Font Families */
+  --ff-young-serif: "Young Serif", serif;
+  --ff-outfit: "Outfit", sans-serif;
+
+  /* Text Preset 1 */
+  --tp-1-font: var(--ff-young-serif);
+  --tp-1-size: 2.5rem;
+  --tp-1-line-height: 100%;
+  --tp-1-letter-spacing: 0px;
+
+  /* Text Preset 2 */
+  --tp-2-font: var(--ff-young-serif);
+  --tp-2-size: 1.75rem;
+  --tp-2-line-height: 100%;
+  --tp-2-letter-spacing: 0px;
+
+  /* Text Preset 3 */
+  --tp-3-font: var(--ff-outfit);
+  --tp-3-weight: 600; /* SemiBold */
+  --tp-3-size: 1.25rem;
+  --tp-3-line-height: 100%;
+  --tp-3-letter-spacing: 0px;
+
+  /* Text Preset 4 */
+  --tp-4-font: var(--ff-outfit);
+  --tp-4-weight: 400; /* Regular */
+  --tp-4-size: 1rem;
+  --tp-4-line-height: 150%;
+  --tp-4-letter-spacing: 0px;
+
+  /* Text Preset 4 Bold */
+  --tp-4-bold-font: var(--font-outfit);
+  --tp-4-bold-weight: 700; /* Bold */
+  --tp-4-bold-size: 1rem;
+  --tp-4-bold-line-height: 150%;
+  --tp-4-bold-letter-spacing: 0px;
+
+  /* Spacing */
+  --spc-1600: 8rem; /* 128px */
+  --spc-600: 3rem; /* 48px */
+  --spc-500: 2.5rem; /* 40px */
+  --spc-400: 2rem; /* 32px */
+  --spc-300: 1.5rem; /* 24px */
+  --spc-200: 1rem; /* 16px */
+  --spc-150: 0.75rem; /* 12px */
+  --spc-100: 0.5rem; /* 8px */
+}
+
+body {
+  background: var(--stone-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  background: var(--white);
+  max-width: 46rem; /*736px*/
+}
+
+main img {
+  display: block;
+  align-items: center;
+  max-width: 656px;
+  max-height: 300px;
+}
+
+main h1 {
+  font-family: var(--tp-1-font);
+  font-size: var(--tp-1-size);
+  color: var(--stone-900);
+  line-height: var(--tp-1-line-height);
+  letter-spacing: var(--tp-1-letter-spacing);
+}
+
+main p {
+  font-family: var(--tp-4-font);
+  font-size: var(--tp-4-size);
+  color: var(--stone-600);
+  line-height: var(--tp-4-line-height);
+  letter-spacing: var(--tp-4-letter-spacing);
+}
