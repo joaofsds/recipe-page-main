@@ -98,6 +98,7 @@ main img {
   max-width: 656px;
   max-height: 300px;
   border-radius: 12px;
+  margin-bottom: var(--spc-500);
 }
 
 main h1 {
@@ -106,6 +107,7 @@ main h1 {
   color: var(--stone-900);
   line-height: var(--tp-1-line-height);
   letter-spacing: var(--tp-1-letter-spacing);
+  margin-bottom: var(--spc-300);
 }
 
 main h2 {
@@ -115,6 +117,8 @@ main h2 {
   line-height: var(--tp-2-line-height);
   letter-spacing: var(--tp-2-letter-spacing);
   font-weight: var(--tp-4-weight);
+  margin-top: var(--spc-400);
+  margin-bottom: var(--spc-100);
 }
 
 main p {
@@ -124,6 +128,7 @@ main p {
   line-height: var(--tp-4-line-height);
   letter-spacing: var(--tp-4-letter-spacing);
 }
+
 main ul {
   list-style: none;
   font-family: var(--tp-4-font);
@@ -132,6 +137,11 @@ main ul {
   line-height: var(--tp-4-line-height);
   letter-spacing: var(--tp-4-letter-spacing);
   font-weight: var(--tp-4-weight);
+  padding: var(--spc-200);
+}
+
+main ul li {
+  padding: var(--spc-100);
 }
 
 main ol {
@@ -142,9 +152,12 @@ main ol {
   letter-spacing: var(--tp-4-letter-spacing);
   font-weight: var(--tp-4-weight);
 }
+
 section {
   background: var(--rose-50);
   border-radius: 12px;
+  margin-top: var(--spc-400);
+  padding: var(--spc-300) var(--spc-300) var(--spc-200) var(--spc-300);
 }
 
 section h3 {
@@ -154,6 +167,7 @@ section h3 {
   line-height: var(--tp-3-line-height);
   letter-spacing: var(--tp-3-letter-spacing);
   font-weight: var(--tp-3-weight);
+  margin-bottom: var(--spc-200);
 }
 
 section ul {
@@ -164,6 +178,16 @@ section ul {
   line-height: var(--tp-4-line-height);
   letter-spacing: var(--tp-4-letter-spacing);
   font-weight: var(--tp-4-weight);
+}
+
+section li {
+  padding: var(--spc-100);
+}
+
+hr {
+  border-color: var(--stone-150);
+  margin-top: var(--spc-400);
+  margin-bottom: var(--spc-400);
 }
 
 table .table-nutrients {
