@@ -160,7 +160,6 @@ section ul li::marker {
   color: var(--rose-800);
 }
 
-/* Lists */
 ul,
 ol {
   padding-left: var(--spc-300);
@@ -192,7 +191,6 @@ ol li::marker {
   color: var(--brown-800);
 }
 
-/* Strong text */
 strong {
   font-family: var(--tp-4-bold-font);
   font-weight: var(--tp-4-bold-weight);
@@ -200,14 +198,12 @@ strong {
   line-height: var(--tp-4-bold-line-height);
 }
 
-/* Divider */
 hr {
   margin: var(--spc-400) 0;
   border: none;
   border-top: 1px solid var(--stone-150);
 }
 
-/* Nutrition Table */
 table {
   width: 100%;
   margin-top: var(--spc-200);
@@ -232,4 +228,20 @@ td {
   font-family: var(--tp-4-bold-font);
   font-weight: var(--tp-4-bold-weight);
   font-size: var(--tp-4-size);
+}
+@media (max-width: 800px) {
+  body {
+    padding: var(--spc-600);
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0;
+  }
+
+  main img {
+    border-radius: 0;
+    margin: 0;
+  }
 }
